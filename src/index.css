@@ -1,13 +1,76 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, #root {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
 }
+
+form, .select-section {
+  width: 30vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 40vh;
+}
+
+form, #line {
+  margin-top: 10rem;
+  align-self: start;
+}
+
+.select-section {
+  height: auto;
+}
+
+#line {
+  margin-top: 3rem;
+  width: 1px;
+  height: 80vh;
+  background-color: rgb(91, 91, 91);
+}
+
+section {
+  padding: 1rem;
+  width: 70%;
+}
+
+select {
+  border: none;
+  padding: 5px;
+  border-radius: 20px;
+  width: 10vw;
+  background-color: rgb(60, 174, 255);
+}
+
+button {
+  background-color: rgb(47, 134, 241);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+  #root, body {
+    display: block;
+  }
+  #line {
+    display: none;
+  }
+  form {
+    width: 90%;
+    margin-top: 3rem;
+    height: auto;
+    flex-direction: row;
+  }
+  section {
+    width: auto;
+    margin: 0.5em;
+  }
+}/*# sourceMappingURL=index.css.map */
