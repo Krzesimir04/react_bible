@@ -1,13 +1,15 @@
 import './index.css';
 import React from 'react';
 import {useState,useEffect} from 'react';
-import config from './config'
+import config from './config';
+
+
 function App() {
   let [text,setText]=useState(null);
   let [list_of_books,setBooks]=useState(null);
   let [list_of_chapters,setChapters]=useState(null);
 
-//download all books
+//download all books and set list of books
   function fetchBooks(){
     fetch('https://api.scripture.api.bible/v1/bibles/fbb8b0e1943b417c-01/books?include-chapters=true&include-chapters-and-sections=true', {
     headers:{
@@ -18,7 +20,7 @@ function App() {
   .then(obj=>setBooks(obj.data));
   }
 
-//download chapters of chossen book
+//download and set list of chapters for chossen book
   function fetchChapters(e){
     fetch(`https://api.scripture.api.bible/v1/bibles/fbb8b0e1943b417c-01/books/${e.target.value}/chapters`,{
       headers:{
@@ -45,7 +47,7 @@ function App() {
   }
 
 
-//download all books using API.Bible
+//download all books using API.Bible when component is generated
   useEffect(() =>{
     fetchBooks();
   },[])
@@ -57,7 +59,6 @@ function App() {
   let options_list_of_chapters=list_of_chapters?.map((val)=>(
     <option key={val.id} value={val.id}>{val.number}</option>
   ));
-
 
   return (
     <>
