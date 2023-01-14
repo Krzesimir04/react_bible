@@ -10,7 +10,7 @@ At the begining you must specific a book, then it is possible to choose a chapte
 
 ![text photo](./img/text.png)
 
-## Instalation on local machine
+## Installation on local machine
 
 ```
 git init
