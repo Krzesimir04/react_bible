@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/react_bible/static/css/main.0426c21c.css",
+    "main.css": "/react_bible/static/css/main.dc037e32.css",
     "main.js": "/react_bible/static/js/main.48d118ef.js",
     "index.html": "/react_bible/index.html",
-    "main.0426c21c.css.map": "/react_bible/static/css/main.0426c21c.css.map",
+    "main.dc037e32.css.map": "/react_bible/static/css/main.dc037e32.css.map",
     "main.48d118ef.js.map": "/react_bible/static/js/main.48d118ef.js.map"
   },
   "entrypoints": [
-    "static/css/main.0426c21c.css",
+    "static/css/main.dc037e32.css",
     "static/js/main.48d118ef.js"
   ]
 }
