@@ -20,6 +20,7 @@ body,#root{
     margin: 0;
     padding: 0;
     @include df;
+    width: 100%;
 }
 
 
@@ -40,7 +41,7 @@ form,#line{
 
 #line{
     margin-top: 3rem;
-    width: 4px;
+    width: 3px;
     height: 80vh;
     background-color: $thirdcolour;
 }
