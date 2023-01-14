@@ -81,7 +81,7 @@ function App() {
         <div id='line'/>
 
         <section>
-          <h3>Treść</h3>
+          <h3>Text</h3>
           <span dangerouslySetInnerHTML={{__html: text?.data.content}}></span>
         </section>
     </>

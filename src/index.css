@@ -49,11 +49,14 @@ select {
 }
 
 button {
-  background-color: rgb(47, 134, 241);
+  background-color: rgb(60, 174, 255);
   border: none;
   padding: 10px 15px;
   border-radius: 20px;
   font-size: 1.2rem;
+}
+button:hover {
+  background-color: rgb(47, 134, 241);
 }
 
 @media screen and (max-width: 800px) {
